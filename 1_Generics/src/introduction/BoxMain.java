@@ -18,8 +18,6 @@ class Box<T> {
     }
 }
 
-class Abbr<T, T> {}
-
 public class BoxMain {
     public static void main(String[] args) {
         Box<Integer> intBox = new Box<>();
