@@ -1,4 +1,4 @@
-package tasks.second;
+package gen3_generics_vs_templates.task;
 
 public class DictionaryMain {
     public static void main(String[] args) {

@@ -23,24 +23,20 @@ casting).
 
 Без дженериков необходимо использывать явное преобразование типов:
 
-```java
+```
 // До введения дженериков
 List list = new ArrayList();
-list.
-
-add("Hello");
+list.add("Hello");
 
 String str = (String) list.get(0); // Необходимо явное преобразование
 ```
 
 С дженериками типы проверяются на этапе компиляции:
 
-```java
+```
 // С использованием дженериков
 List<String> list = new ArrayList<>();
-list.
-
-add("Hello");
+list.add("Hello");
 
 String str = list.get(0); // Нет необходимости в преобразовании
 ```
@@ -55,12 +51,12 @@ String str = list.get(0); // Нет необходимости в преобра
 При помощи дженериков можно код, который работает с разными типами данных без необходимости дублирования. Это улучшает
 поддерживаемость и снижает количество кода, который нужно писать и тестировать.
 
-#### [Пример](src%2FBoxMain.java):
+#### [Пример](code%2FBoxMain.java)
 
-Обобщенный класс [introduction.Box](src%2FBoxMain.java) может использоваться для хранения любых типов объектов:
+Обобщенный класс ```Box``` может использоваться для хранения любых типов объектов:
 
-```java
-public class introduction.Box<T> {
+```
+public class gen1_intro.code.Box<T> {
     private T value;
 
     public void set(T value) {
@@ -72,27 +68,21 @@ public class introduction.Box<T> {
     }
 }
 
-introduction.Box<Integer> intBox = new introduction.Box<>();
-intBox.
+gen1_intro.code.Box<Integer> intBox = new gen1_intro.code.Box<>();
+intBox.set(123);
 
-set(123);
-
-introduction.Box<String> strBox = new introduction.Box<>();
-strBox.
-
-set("Hello");
+gen1_intro.code.Box<String> strBox = new gen1_intro.code.Box<>();
+strBox.set("Hello");
 ```
 
 ### 4. Читаемость и чистота кода
 
 Код становится более понятным и очевидным за счет явного указания типов, с которыми работает код.
 
-```java
+```
 // Явно видно, что список работает со строками
 List<String> names = new ArrayList<>();
-names.
-
-add("Alice");
+names.add("Alice");
 ```
 
 ### 5. Безопасность кода
@@ -107,4 +97,4 @@ List<String> strings = new ArrayList<>();
 // strings.add(10); // Ошибка компиляции — можно добавлять только строки
 ```
 
-## [Задание](src%2Fintroduction%2FfirstTask_pair.md)
+## [Задание](task%2Fpair_task.md)

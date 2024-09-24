@@ -1,7 +1,4 @@
-package tasks.third;
-
-import java.util.ArrayList;
-import java.util.List;
+package gen4_restriction.task;
 
 public class ShapeMain {
     public static void main(String[] args) {

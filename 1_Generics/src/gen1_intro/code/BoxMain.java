@@ -1,4 +1,4 @@
-package introduction;
+package gen1_intro.code;
 
 /**
  * Дженерик класс

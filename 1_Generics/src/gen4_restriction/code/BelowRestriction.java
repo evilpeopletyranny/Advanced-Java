@@ -1,4 +1,4 @@
-package restriction;
+package gen4_restriction.code;
 
 import java.util.ArrayList;
 import java.util.List;
