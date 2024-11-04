@@ -101,7 +101,7 @@ linkedQueue.offer("Element 2");
 System.out.println(linkedQueue.poll()); // Element 1
 ```
 
-# LinkedList<E>
+# PriorityQueue<E>
 
 ```PriorityQueue<E>``` — это очередь с приоритетами, в которой элементы обрабатываются в порядке их приоритета.
 Приоритет определяется либо естественным порядком элементов (например, для чисел и строк), либо настраиваемым
