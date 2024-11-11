@@ -38,10 +38,6 @@
   списке.
 - ```Student findFirst(List<Student> students, StudentPredicate predicate)``` — находит первого студента,
   удовлетворяющего условию.
-- ```Student max(List<Student> students, StudentComparator comparator)``` — находит студента с максимальным значением по
-  заданному критерию.
-- ```List<Student> sort(List<Student> students, StudentComparator comparator)``` — сортирует список студентов по
-  заданному критерию.
 
 ### Использовать созданные функциональные интерфейсы для решения следующих задач:
 
@@ -52,6 +48,6 @@
 - Найти студента с максимальным средним баллом.
 - Отсортировать список студентов по имени.
 
-### Проверка:
+### Проверка: [Main](Main.java)
 
 ## Время: 20-25 минут
